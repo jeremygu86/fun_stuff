@@ -1,22 +1,4 @@
 # Author: Wenxiao $$$
-__author__ = 'wenxiaog'
-# Purpose: Study python
-# Created date: 2015/6/30 $$$
-# Last updated: 2015/11/28
-
-## ---- 1.Create Package ---- ##
-## Ask Haoran Cai
-
-# http://pythoncentral.io/how-to-create-a-python-package/
-# http://blog.163.com/yang_jianli/blog/static/161990006201162152724339/
-# http://python-packaging.readthedocs.org/en/latest/everything.html?highlight=git
-
-## ---- 2.GitHub ---- ##
-## Ask Haoran Cai
-# https://help.github.com/articles/create-a-repo/
-
-
-
 ### Part 1: Load packages and the easiest examples
 import os
 import sys
@@ -88,21 +70,6 @@ from subprocess import Popen, PIPE
 # rpy2.robjects.r(command_str) # 'getwd()'
 
 
-
-
-
-## Dazhengli.py
-#### Basic Information $$$$
-### Author: $$$
-### Purpose: $$$
-### Created date: $$$
-
-## Last updated: $$
-## Main updates: $$
-## Note: $$
-## $$
-#### End $$$$
-
 import os
 # a = %pwd
 # b = os.getcwd()
@@ -131,36 +98,6 @@ def install_and_import(package):
         pip.main(['install', package])
     finally:
         globals()[package] = importlib.import_module(package)
-##in progress
-# package = 'numpy'
-# abbrev = 'np'
-# scr = "import "+ package +" as "+  abbrev
-# print scr
-# exec scr
-# np1 = np.array([1,2,3])
-# type(np1)
-# def install_and_importV2(package,abbrev):
-#     # import importlib
-#     package = 'numpy'
-#     abbrev = 'np'
-#     scr = "import "+ package +" as "+  abbrev
-#
-#     #np1 = np.array([1,2,3])
-#     #type(np1)
-#
-#     try:
-#         print scr
-#         exec scr
-#     except ImportError:
-#         import pip
-#         pip.main(['install', package])
-#     finally:
-#         globals()[package] = importlib.import_module(package)
-
-
-# Example
-# install_and_import('transliterate')
-
 # Automatically update all packages
 def update_all():
     import pip
